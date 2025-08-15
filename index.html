@@ -19,7 +19,7 @@
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-3">
-                    <img src="tDIMdA8urC3p6_bnQfw83" alt="Apex Auto Works Logo" class="h-12">
+                    <img src="./logo.png" alt="Apex Auto Works Logo" class="h-12">
                 </div>
                 <div class="hidden md:flex space-x-8">
                     <a href="#start" class="text-gray-300 hover:text-blue-400 transition">Start</a>
@@ -37,7 +37,7 @@
     <!-- Hero Section -->
     <section id="start" class="py-32 pt-40 relative overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="3DXyVrmebREYUuy_GmuQl" alt="Apex Auto Works Banner" class="w-full h-full object-cover opacity-60">
+            <img src="./banner.png" alt="Apex Auto Works Banner" class="w-full h-full object-cover opacity-60">
             <div class="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
         <div class="container mx-auto px-6 relative z-10">
@@ -103,7 +103,7 @@
                     <ul class="text-sm text-gray-500 space-y-2">
                         <li>• Samochody używane</li>
                         <li>• Sprawdzona historia pojazdu</li>
-                        <li>• Uczcive ceny</li>
+                        <li>• Uczciwe ceny</li>
                         <li>• Wymiana na rozliczenie</li>
                     </ul>
                 </div>
@@ -124,7 +124,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="o-nas" class="py-20 gradient-bg">
+    <section id="o-nas" class="py-20 bg-black">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-10 lg:mb-0">
@@ -159,7 +159,7 @@
                             <div class="w-6 h-6 blue-gradient rounded-full flex items-center justify-center">
                                 <span class="text-white text-sm">✓</span>
                             </div>
-                            <span class="text-gray-300">Indywidualne podejście do każdego klienta</span>
+                            <span class="text-gray-300">Usługa odbioru i dostawy samochodu</span>
                         </div>
                     </div>
                 </div>
@@ -175,10 +175,10 @@
                 <p class="text-xl text-gray-400">Jesteśmy gotowi pomóc z Twoim samochodem</p>
             </div>
             
-            <div class="grid md:grid-cols-2 gap-12">
+            <div class="grid lg:grid-cols-2 gap-12">
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Informacje kontaktowe</h3>
-                    <div class="space-y-4">
+                    <div class="space-y-6">
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 blue-gradient rounded-lg flex items-center justify-center">
                                 <span class="text-white">📍</span>
@@ -199,20 +199,11 @@
                         </div>
                         <div class="flex items-center space-x-4">
                             <div class="w-12 h-12 blue-gradient rounded-lg flex items-center justify-center">
-                                <span class="text-white">📧</span>
-                            </div>
-                            <div>
-                                <div class="font-semibold">Email</div>
-                                <div class="text-gray-400">kontakt@apexautoworks.pl</div>
-                            </div>
-                        </div>
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 blue-gradient rounded-lg flex items-center justify-center">
-                                <span class="text-white">🕒</span>
+                                <span class="text-white">⏰</span>
                             </div>
                             <div>
                                 <div class="font-semibold">Godziny otwarcia</div>
-                                <div class="text-gray-400">Pon-Pt: 8:00-17:00<br>Sobota: 9:00-14:00</div>
+                                <div class="text-gray-400">Pon-Pt: 8:00-17:00<br>Sobota: 8:00-14:00</div>
                             </div>
                         </div>
                     </div>
@@ -221,11 +212,23 @@
                 <div>
                     <h3 class="text-2xl font-semibold mb-6">Wyślij wiadomość</h3>
                     <form class="space-y-4">
-                        <input type="text" placeholder="Imię i nazwisko" class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-blue-400 focus:outline-none">
-                        <input type="email" placeholder="Email" class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-blue-400 focus:outline-none">
-                        <input type="tel" placeholder="Telefon" class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-blue-400 focus:outline-none">
-                        <textarea rows="4" placeholder="Wiadomość" class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg focus:border-blue-400 focus:outline-none"></textarea>
-                        <button type="submit" class="blue-gradient w-full py-3 rounded-lg text-white font-semibold hover:opacity-90 transition">
+                        <div>
+                            <input type="text" placeholder="Imię i nazwisko" 
+                                   class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Adres e-mail" 
+                                   class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Telefon" 
+                                   class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-400 focus:outline-none">
+                        </div>
+                        <div>
+                            <textarea placeholder="Wiadomość" rows="4" 
+                                      class="w-full px-4 py-3 bg-black border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:border-blue-400 focus:outline-none resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full blue-gradient py-3 rounded-lg text-white font-semibold hover:opacity-90 transition">
                             Wyślij wiadomość
                         </button>
                     </form>
@@ -239,7 +242,7 @@
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="flex items-center space-x-3 mb-4 md:mb-0">
-                    <img src="tDIMdA8urC3p6_bnQfw83" alt="Apex Auto Works" class="h-8">
+                    <img src="./logo.png" alt="Apex Auto Works" class="h-8">
                 </div>
                 <div class="text-gray-500 text-sm">
                     © 2024 Apex Auto Works. Wszystkie prawa zastrzeżone.
@@ -247,27 +250,5 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Form submission (demo)
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Dziękujemy za wiadomość! Skontaktujemy się z Tobą wkrótce.');
-        });
-    </script>
 </body>
 </html>
